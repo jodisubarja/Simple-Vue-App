@@ -1,5 +1,7 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/Simple-Vue-App/'
-    : '/'
+  devServer: {
+    port: 3454,
+    sockPath: "sockjs-node",
+  },
+  publicPath: "/absproxy/3454",
 }
